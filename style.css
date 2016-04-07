@@ -39,10 +39,26 @@ p {
 }
 
 .controls {
-    margin: 30px 0;
+    margin: 30px 0 10px 0;
+}
+.controls2 {
+    margin-bottom: 30px;
 }
 button {
     height: 60px;
-    width: 200px;
+    width: 160px;
     font-size: 1.4em;
+}
+button:hover {
+    color: white;
+    background-color: darkslategray;
+    border: 1px solid black;
+}
+.on {
+    color: white;
+    background-color: forestgreen;
+}
+.off {
+    color: white;
+    background-color: red;
 }

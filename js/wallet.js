@@ -15,6 +15,18 @@ module.exports = function (start) {
                  coins = coins + price;
              }
          },
+         buy2: function () {
+             if (coins >= price) {
+                 trinkets = trinkets + 5;
+                 coins = coins - price;
+             }
+         },
+         sell2: function () {
+             if (trinkets > 1) {
+                 trinkets = trinkets - 5;
+                 coins = coins + price;
+             }
+         },
          setPrice: function (newp) {
              price = newp;
          },

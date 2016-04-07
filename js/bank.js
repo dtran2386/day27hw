@@ -1,4 +1,4 @@
-module.exports = function updatePrice(store) {
+module.exports = function bank(store) {
     // make an ajax request
     // update the dom
     
@@ -10,7 +10,7 @@ module.exports = function updatePrice(store) {
         var data = JSON.parse(req.responseText);
         
         var exchange = document.getElementById('exchange');
-        exchange.textContent = data.price;
+        exchange.textContent = Math.round(data.price * 10) / 10;
         
         store(data.price);
     }; //end onload function
