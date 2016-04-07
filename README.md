@@ -1,3 +1,5 @@
-day 27 homework. Trinket Trader
+day 27 homework extended into the weekend. Trinket Trader
 
-I didn't actually add anything extra to this project. I spent the night trying to understand the callbacks, ajax, modules, etc. by writing everything from scratch.
+- Finally got auto-trading to work
+- Trying to work on a Transaction Log
+- Also need a stats section/chart
