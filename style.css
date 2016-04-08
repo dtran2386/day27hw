@@ -51,7 +51,7 @@ button {
 }
 button:hover {
     color: white;
-    background-color: darkslategray;
+    background-color: rgb(51,51,51);
     border: 1px solid black;
 }
 .on {
