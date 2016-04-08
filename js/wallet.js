@@ -16,15 +16,15 @@ module.exports = function (start) {
              }
          },
          buy2: function () {
-             if (coins >= price) {
+             if (coins >= (price * 5)) {
                  trinkets = trinkets + 5;
-                 coins = coins - price;
+                 coins = coins - (price * 5);
              }
          },
          sell2: function () {
-             if (trinkets > 1) {
+             if (trinkets >= 5) {
                  trinkets = trinkets - 5;
-                 coins = coins + price;
+                 coins = coins + (price * 5);
              }
          },
          setPrice: function (newp) {

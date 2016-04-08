@@ -62,3 +62,11 @@ button:hover {
     color: white;
     background-color: red;
 }
+.on2 {
+    color: forestgreen;
+    font-size: 20px;
+}
+.off2 {
+    color: red;
+    font-size: 20px;
+}

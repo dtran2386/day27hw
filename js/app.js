@@ -71,11 +71,11 @@ window.addEventListener('load', function () {
         bank(autoBuySell);
     };
     
-//    var autoOn = window.setInterval(autoTrading, 1000);
+    var autoOn = window.setInterval(autoTrading, 1000);
 
     var start = document.getElementById('start');
     start.addEventListener('click', function () {
-        var autoOn = window.setInterval(autoTrading, 1000);
+        autoOn = window.setInterval(autoTrading, 1000);
         console.log('auto-trade ON');
         stop.classList.remove('off');
         start.classList.add('on');
@@ -83,7 +83,7 @@ window.addEventListener('load', function () {
     var stop = document.getElementById('stop');
     stop.addEventListener('click', function () {
         console.log('auto-trade OFF');
-        window.clearInterval(autoTrading);
+        window.clearInterval(autoOn);
         start.classList.remove('on');
         stop.classList.add('off');
     });
